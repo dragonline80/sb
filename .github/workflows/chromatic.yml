@@ -16,15 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v1
-
-      - name: Install dependencies
-        run: npm install  # npm을 사용하는 경우 'npm install'로 변경
-
-      #👇 Adds Chromatic as a step in the workflow
-      - name: Deploy to Chromatic
-        uses: chromaui/action@v1
+      - uses: actions/checkout@v1
+      - run: npm install
+        #👇 Adds Chromatic as a step in the workflow
+      - uses: chromaui/action@v1
         # Options required for Chromatic's GitHub Action
         with:
           #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/react/ko/deploy/ to obtain it
