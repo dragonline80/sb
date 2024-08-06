@@ -7,7 +7,6 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    'storybook-addon-figma',
   ],
   framework: {
     name: "@storybook/vue3-vite",

@@ -1,12 +1,10 @@
 import { fn } from '@storybook/test';
 import MyButton from './Button.vue';
-import {withDesign } from 'storybook-addon-figma';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
   title: 'Example/Button',
   component: MyButton,
-  decorators:[withDesign],
   tags: ['autodocs'],
   argTypes: {
     size: { control: { type: 'select' }, options: ['small', 'medium', 'large'] },
@@ -43,10 +41,3 @@ export const Small = {
     label: 'Button',
   },
 };
-
-Default.parameters = {
-  design:{
-    type:'figma',
-    url:'https://www.figma.com/design/QdVo1gRYjxFQBte9ThcmSg/KCC-%EA%B8%80%EB%9D%BC%EC%8A%A4-%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4-%ED%86%B5%ED%95%A9-%EC%86%94%EB%A3%A8%EC%85%98?node-id=455-36732&m=dev',
-  }
-}
