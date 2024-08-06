@@ -27,6 +27,7 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "chromatic": "^11.7.0",
     "storybook": "^8.2.7",
+    "storybook-addon-designs": "^6.3.1",
     "vite": "^5.3.4"
   }
 }
