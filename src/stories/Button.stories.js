@@ -1,6 +1,6 @@
 import { fn } from '@storybook/test';
 import MyButton from './Button.vue';
-import {withDesign } from 'storybook-addon-designs';
+import {withDesign } from 'storybook-addon-figma';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
